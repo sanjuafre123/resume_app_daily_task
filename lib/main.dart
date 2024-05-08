@@ -3,9 +3,8 @@ import 'package:flutter/services.dart';
 
 import 'Utils/routes.dart';
 
-void main()
-{
-  runApp(Myapp());
+void main() {
+  runApp(const Myapp());
 }
 
 class Myapp extends StatelessWidget {
@@ -13,7 +12,20 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: Colors.green));
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.green,
+      ),
+    );
+    SystemChrome.setPreferredOrientations(
+      [
+        DeviceOrientation.landscapeLeft,
+        DeviceOrientation.landscapeRight,
+        DeviceOrientation.portraitDown,
+        DeviceOrientation.portraitUp
+      ],
+    );
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: Approutes.routes,
