@@ -218,4 +218,11 @@ SystemChrome.setPreferredOrientations([
 
 ```
 
+<h3 align="center"> ✨ Gmail ✨ </h3>
 
+<h1 align="left"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/528795ad-8a6a-4fef-bb98-bed0ded5c0ed" height ="550">
+  
+</div>
