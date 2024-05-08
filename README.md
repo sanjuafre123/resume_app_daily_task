@@ -1,7 +1,6 @@
 
-#resume_app_daily_task
+# resume_app_daily_task
 
-- # List of Map
 # 1. What is List and Map?
 - ### List :  The list is an ordered collection of objects and the List can contain duplicate values.
 
@@ -168,9 +167,9 @@ void main() {
 ```
   
 
-```
+```base
 
-- Generics
+# Generics
   
 - Generics are denoted by using angle brackets < > and a type parameter.
   The type parameter represents a placeholder for a specific type that 
