@@ -1,9 +1,7 @@
 
 
 import 'package:flutter/material.dart';
-
-import '../Screen/G-mail/G-mail.dart';
-import '../Screen/Home/Homescreen.dart';
+import '../home/Components/Screen/G-mail/G-mail.dart';
 
 class Approutes{
   static Map<String, Widget Function(BuildContext)> routes = {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../Utils/globallist.dart';
+import '../../../../Utils/globallist.dart';
+
 
 class Gmailscreen extends StatefulWidget {
   const Gmailscreen({super.key});
