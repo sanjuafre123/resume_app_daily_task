@@ -237,8 +237,9 @@ SystemChrome.setPreferredOrientations([
   
 </div>
 
+<h3 align="center"> Login video </h3>
 
-
-
-
-
+<div align="center">
+ <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/ef48522c-25f6-42ac-89b1-be7395f1882b" type="video/mp4">
+</video>
+</div>
