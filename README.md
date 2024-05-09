@@ -226,3 +226,19 @@ SystemChrome.setPreferredOrientations([
   <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/528795ad-8a6a-4fef-bb98-bed0ded5c0ed" height ="550">
   
 </div>
+
+<h3 align="center"> ✨ Login Page UI ✨ </h3>
+
+<h1 align="left"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/2f79e899-4f29-4c2c-901e-62fba3f3caec" height ="550">
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/5edfdd6c-817c-4f53-b4ff-329fff979d5b" height ="550">
+  
+</div>
+
+
+
+
+
+
