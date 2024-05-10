@@ -243,3 +243,26 @@ SystemChrome.setPreferredOrientations([
  <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/ef48522c-25f6-42ac-89b1-be7395f1882b" type="video/mp4">
 </video>
 </div>
+
+<h3 align="center"> ✨ LoginEmail Page  ✨ </h3>
+
+<h1 align="left"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/c9b7f06c-f8c0-4369-be39-0ae0551e3485" height ="550">
+  
+</div>
+
+<h3 align="center"> ✨  Password Page ✨ </h3>
+
+<h1 align="left"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/f8ea2e1d-13cd-4145-8a62-cb4d52f35c5a" height ="550">
+  
+</div>
+
+
+
+
+
