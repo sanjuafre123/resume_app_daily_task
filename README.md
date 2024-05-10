@@ -243,3 +243,45 @@ SystemChrome.setPreferredOrientations([
  <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/ef48522c-25f6-42ac-89b1-be7395f1882b" type="video/mp4">
 </video>
 </div>
+
+<h3 align="center"> ✨ LoginEmail Page  ✨ </h3>
+
+<h1 align="left"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/c9b7f06c-f8c0-4369-be39-0ae0551e3485" height ="550">
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/Google_Login_Page_With_Validation/Emailscreen.dart">  Click here Link </a>
+  
+</div>
+
+<h3 align="center"> ✨  Password Page ✨ </h3>
+
+<h1 align="left"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/f8ea2e1d-13cd-4145-8a62-cb4d52f35c5a" height ="550">
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/Google_Login_Page_With_Validation/PasswordScreen.dart">  Click here Link </a>
+  
+</div>
+
+<h1 align="center"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/55924158-7814-4e6f-ab28-3415e6526f7d" height ="550">
+  
+</div>
+
+
+<h3 align="center"> Google login video </h3>
+
+<div align="center">
+ <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/5bcfdfc6-ff70-4145-b633-2fad2a150baf"type="video/mp4">
+</video>
+</div>
+
+
+
+
+
+
+
