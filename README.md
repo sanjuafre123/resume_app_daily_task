@@ -250,6 +250,7 @@ SystemChrome.setPreferredOrientations([
 <div align ="center">
 
   <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/c9b7f06c-f8c0-4369-be39-0ae0551e3485" height ="550">
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/Google_Login_Page_With_Validation/Emailscreen.dart">  Click here Link </a>
   
 </div>
 
@@ -259,6 +260,7 @@ SystemChrome.setPreferredOrientations([
 <div align ="center">
 
   <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/f8ea2e1d-13cd-4145-8a62-cb4d52f35c5a" height ="550">
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/Google_Login_Page_With_Validation/PasswordScreen.dart">  Click here Link </a>
   
 </div>
 
