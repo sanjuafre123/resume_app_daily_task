@@ -109,6 +109,7 @@ class _GoogleScreenState extends State<GoogleScreen> {
                               {
                                 return 'xyz@gmail.com';
                               }
+
                           },
                           controller: txtEmail,
                           decoration: InputDecoration(
