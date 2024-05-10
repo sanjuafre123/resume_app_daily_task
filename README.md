@@ -264,11 +264,24 @@ SystemChrome.setPreferredOrientations([
   
 </div>
 
+<h1 align="center"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/55924158-7814-4e6f-ab28-3415e6526f7d" height ="550">
+  
+</div>
+
+
 <h3 align="center"> Google login video </h3>
 
 <div align="center">
- <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/ee0f44b9-77c7-4056-801c-df7d101b2f2c"type="video/mp4">
+ <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/5bcfdfc6-ff70-4145-b633-2fad2a150baf"type="video/mp4">
 </video>
 </div>
+
+
+
+
+
 
 
