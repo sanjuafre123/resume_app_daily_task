@@ -107,9 +107,8 @@ class _GoogleScreenState extends State<GoogleScreen> {
                               }
                             else if(value.toString()=='@gmail.com')
                               {
-                                return 'xyz@gmail.com';
+                                return 'invlid xyz@gmail.com';
                               }
-
                           },
                           controller: txtEmail,
                           decoration: InputDecoration(
@@ -193,10 +192,10 @@ class _GoogleScreenState extends State<GoogleScreen> {
                                       height: 40,
                                       width: 76,
                                       decoration: BoxDecoration(
-                                        color: Color(0xff0a58d0),
+                                        color: const Color(0xff0a58d0),
                                         borderRadius: BorderRadius.circular(30),
                                       ),
-                                      child: Text(
+                                      child: const Text(
                                         'Next',
                                         style: TextStyle(color: Colors.white),
                                       ),

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PasswordScreen extends StatefulWidget {
@@ -101,6 +102,10 @@ class _PasswordScreenState extends State<PasswordScreen> {
                               {
                                 return 'Password is required';
                               }
+                            if(value.length > 8 )
+                              {
+                                return 'Password ';
+                              }
                           },
                           controller: txtPassword,
                           obscureText: true,
@@ -168,20 +173,29 @@ class _PasswordScreenState extends State<PasswordScreen> {
                                   ),
                                 ),
                                 const SizedBox(width: 25),
-                                Padding(
-                                  padding:
-                                  const EdgeInsets.only(top: 25, right: 5),
-                                  child: Container(
-                                    alignment: Alignment.center,
-                                    height: 40,
-                                    width: 76,
-                                    decoration: BoxDecoration(
-                                      color: Color(0xff0a58d0),
-                                      borderRadius: BorderRadius.circular(30),
-                                    ),
-                                    child: Text(
-                                      'Sign in',
-                                      style: TextStyle(color: Colors.white),
+                                GestureDetector(
+                                  onTap: () {
+                                    bool response = formkey.currentState!.validate();
+                                    if(response)
+                                    {
+                                      Navigator.of(context).pushNamed('/Succese');
+                                    }
+                                  },
+                                  child: Padding(
+                                    padding:
+                                    const EdgeInsets.only(top: 25, right: 5),
+                                    child: Container(
+                                      alignment: Alignment.center,
+                                      height: 40,
+                                      width: 76,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xff0a58d0),
+                                        borderRadius: BorderRadius.circular(30),
+                                      ),
+                                      child: Text(
+                                        'Sign in',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
                                     ),
                                   ),
                                 )
