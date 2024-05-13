@@ -106,7 +106,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                             if (value!.isEmpty) {
                               return 'Password is required';
                             }
-                            if (value!.length > 8 == value.length <1) {
+                            if (value!.length > 9 == value.length < 0) {
                               return 'Password Invalid';
                             }
                           },
@@ -184,7 +184,8 @@ class _PasswordScreenState extends State<PasswordScreen> {
                                       ScaffoldMessenger.of(context)
                                           .showSnackBar(
                                         const SnackBar(
-                                          content: Text('Login Successful'),
+
+                                          content: Text('Login Successful',style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
                                           elevation: 1,
                                           duration: Duration(seconds: 5),
                                         ),
