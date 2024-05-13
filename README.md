@@ -264,6 +264,8 @@ SystemChrome.setPreferredOrientations([
   
 </div>
 
+<h3 align="center"> ✨  Succeessful Page ✨ </h3>
+
 <h1 align="center"></h1>
 <div align ="center">
 
@@ -271,6 +273,14 @@ SystemChrome.setPreferredOrientations([
   
 </div>
 
+<h3 align="center"> ✨  Snaker Page ✨ </h3>
+
+<h1 align="center"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/543454ce-ecd3-4e8b-a829-6a748ca80601" height ="550">
+  
+</div>
 
 <h3 align="center"> Google login video </h3>
 
