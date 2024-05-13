@@ -279,6 +279,7 @@ SystemChrome.setPreferredOrientations([
 <div align ="center">
 
   <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/543454ce-ecd3-4e8b-a829-6a748ca80601" height ="550">
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/Google_Login_Page_With_Validation/PasswordScreen.dart">  Click here Link </a>
   
 </div>
 
