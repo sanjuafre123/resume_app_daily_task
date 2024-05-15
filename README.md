@@ -310,9 +310,14 @@ SystemChrome.setPreferredOrientations([
 </div>
 
 
+<h3 align="center"> ✨  Image picker ✨ </h3>
 
+<h1 align="center"></h1>
+<div align ="center">
 
-
-
-
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/0f698b09-fd33-4dcd-84ce-997030fedfe6" height ="550"><br>
+  <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/f0035ecc-b586-4f88-8b06-ff4b5932728f" type="video/mp4">
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/image_picker/img_picker.dart">  Click here Link </a>
+  
+</div>
 
