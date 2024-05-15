@@ -292,6 +292,26 @@ SystemChrome.setPreferredOrientations([
 
 
 
+<h3 align="center"> ✨  Snaker Page2 ✨ </h3>
+
+<h1 align="center"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/379fc6c4-deae-4734-b124-ee3cd2a7f866" height ="550"><br>
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/SnackBar%20%26%20TextFormField/snaker.dart">  Click here Link </a>
+  
+</div>
+
+<h3 align="center"> Google login video </h3>
+
+<div align="center">
+ <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/4409b27f-9e52-4a59-b4e2-75c9efe8ab4b"type="video/mp4">
+</video>
+</div>
+
+
+
+
 
 
 
