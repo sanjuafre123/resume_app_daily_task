@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class PasswordScreen extends StatefulWidget {
   const PasswordScreen({super.key});
@@ -12,7 +13,8 @@ class _PasswordScreenState extends State<PasswordScreen> {
   @override
   Widget build(BuildContext context) {
     TextEditingController txtPassword = TextEditingController();
-    GlobalKey<FormState> formkey =GlobalKey();
+    GlobalKey<FormState> formkey = GlobalKey();
+    bool passtonggle = true;
 
     return Scaffold(
       backgroundColor: Color(0xfff0f4f8),
@@ -93,22 +95,24 @@ class _PasswordScreenState extends State<PasswordScreen> {
                     ),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 85, left: 15, right: 15),
+                    padding:
+                        const EdgeInsets.only(top: 85, left: 15, right: 15),
                     child: Column(
                       children: [
                         TextFormField(
-                          validator: (value){
-                            if(value!.isEmpty)
-                              {
-                                return 'Password is required';
-                              }
-                            if(value.length > 8 )
-                              {
-                                return 'Password ';
-                              }
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return 'Password is required?';
+                            }
+                            if (value.endsWith.hashCode.isEven ==
+                                    MaxLengthEnforcement
+                                        .truncateAfterCompositionEnds &&
+                                value.length < 8) {
+                              return 'password minimum 8 digit required?';
+                            }
                           },
                           controller: txtPassword,
-                          obscureText: true,
+                          obscureText: passtonggle,
                           decoration: InputDecoration(
                             labelText: 'Password',
                             labelStyle: const TextStyle(
@@ -117,6 +121,15 @@ class _PasswordScreenState extends State<PasswordScreen> {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(4),
                             ),
+                            prefixIcon: Icon(Icons.lock),
+                            suffixIcon: InkWell(
+                              onTap: () {
+                                setState(() {
+                                  passtonggle =   !passtonggle;
+                                });
+                              },
+                              child: Icon(passtonggle ? Icons.visibility : Icons.visibility_off ),
+                            )
                           ),
                         ),
                         const Row(
@@ -175,15 +188,16 @@ class _PasswordScreenState extends State<PasswordScreen> {
                                 const SizedBox(width: 25),
                                 GestureDetector(
                                   onTap: () {
-                                    bool response = formkey.currentState!.validate();
-                                    if(response)
-                                    {
-                                      Navigator.of(context).pushNamed('/Succese');
+                                    bool response =
+                                        formkey.currentState!.validate();
+                                    if (response) {
+                                      Navigator.of(context)
+                                          .pushNamed('/Succese');
                                     }
                                   },
                                   child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(top: 25, right: 5),
+                                    padding: const EdgeInsets.only(
+                                        top: 25, right: 5),
                                     child: Container(
                                       alignment: Alignment.center,
                                       height: 40,

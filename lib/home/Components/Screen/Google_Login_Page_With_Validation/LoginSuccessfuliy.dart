@@ -19,8 +19,9 @@ class _LoginSucceseState extends State<LoginSuccese> {
           height: height * 0.69,
           width: width * 0.23,
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.grey,width: 1),
-              color: Colors.white, borderRadius: BorderRadius.circular(20)),
+              border: Border.all(color: Colors.grey, width: 1),
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
