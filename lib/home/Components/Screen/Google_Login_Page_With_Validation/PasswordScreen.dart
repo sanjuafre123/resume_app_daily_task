@@ -106,7 +106,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                             if (value!.isEmpty) {
                               return 'Password is required';
                             }
-                            if (value!.length > 9 == value.length < 0) {
+                            if (value!.length > 9 == value.length < 1) {
                               return 'Password Invalid';
                             }
                           },
