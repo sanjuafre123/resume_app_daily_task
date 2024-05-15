@@ -30,7 +30,7 @@ class _snakerpageState extends State<snakerpage> {
               SnackBar(
                 content: const Text(
                   'Snaker bar is here',
-                  style: TextStyle(fontSize: 18),
+                  style: TextStyle(fontSize: 16),
                 ),
                 action: SnackBarAction(
                   label: 'Retry',
