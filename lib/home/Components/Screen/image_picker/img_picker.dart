@@ -35,7 +35,7 @@ class _imgpickerState extends State<imgpicker> {
             height: 300,
             width: 300,
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.black,width: 1),
+              border: Border.all(color: Colors.grey,width: 1),
                 image: (fileImage != null) ? DecorationImage(
                   fit: BoxFit.cover,
                   image: FileImage(fileImage!),):null

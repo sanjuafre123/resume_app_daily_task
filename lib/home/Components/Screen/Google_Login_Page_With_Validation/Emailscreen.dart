@@ -11,7 +11,7 @@ class _GoogleScreenState extends State<GoogleScreen> {
   @override
   Widget build(BuildContext context) {
     TextEditingController txtEmail = TextEditingController();
-    GlobalKey<FormState> formkey =GlobalKey();
+    GlobalKey<FormState> formkey = GlobalKey();
 
     return Scaffold(
       backgroundColor: const Color(0xfff0f4f8),
@@ -29,8 +29,9 @@ class _GoogleScreenState extends State<GoogleScreen> {
                   decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(15),
-                        bottomLeft: Radius.circular(15)),
+                      topLeft: Radius.circular(15),
+                      bottomLeft: Radius.circular(15),
+                    ),
                   ),
                   child: Column(
                     children: [
@@ -92,23 +93,19 @@ class _GoogleScreenState extends State<GoogleScreen> {
                     ),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 85, left: 15, right: 15),
+                    padding:
+                        const EdgeInsets.only(top: 85, left: 15, right: 15),
                     child: Column(
                       children: [
                         TextFormField(
                           validator: (value) {
-                            if(value!.isEmpty)
-                              {
-                                return ' please enter @gmail';
-                              }
-                              else if(!value.contains('@gmail.com'))
-                              {
-                                return 'invalid Email ID';
-                              }
-                            else if(value.toString()=='@gmail.com')
-                              {
-                                return 'invlid xyz@gmail.com';
-                              }
+                            if (value!.isEmpty) {
+                              return ' please enter @gmail';
+                            } else if (!value.contains('@gmail.com')) {
+                              return 'invalid Email ID';
+                            } else if (value.toString() == '@gmail.com') {
+                              return 'invlid xyz@gmail.com';
+                            }
                           },
                           controller: txtEmail,
                           decoration: InputDecoration(
@@ -181,11 +178,12 @@ class _GoogleScreenState extends State<GoogleScreen> {
                                       const EdgeInsets.only(top: 25, right: 5),
                                   child: GestureDetector(
                                     onTap: () {
-                                      bool response = formkey.currentState!.validate();
-                                      if(response)
-                                        {
-                                          Navigator.of(context).pushNamed('/Password');
-                                        }
+                                      bool response =
+                                          formkey.currentState!.validate();
+                                      if (response) {
+                                        Navigator.of(context)
+                                            .pushNamed('/Password');
+                                      }
                                     },
                                     child: Container(
                                       alignment: Alignment.center,
