@@ -42,3 +42,7 @@ List<bool> hobby = [
 List hobbyname = [
   'Cricket' , 'Chess' , 'Footboll' , 'Reading',
 ];
+
+String firstName = '';
+String lastName = '';
+String phoneNumber = '';

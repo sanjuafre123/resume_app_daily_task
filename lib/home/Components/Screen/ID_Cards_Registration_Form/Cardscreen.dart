@@ -26,7 +26,7 @@ class _CardScreenState extends State<CardScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(
-          Icons.person,
+          Icons.account_circle,
           size: 30,
         ),
         elevation: 1,
@@ -108,14 +108,15 @@ class _CardScreenState extends State<CardScreen> {
                             }
                           },
                           decoration: InputDecoration(
-                            hintText: '',
-                              labelText: 'First Name',
-                              labelStyle: TextStyle(
-                                color: Colors.blue,
-                              ),
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(4),
-                              )),
+                            hintText: 'Ex:- Sanju',
+                            labelText: 'First Name',
+                            labelStyle: TextStyle(
+                              color: Colors.grey,
+                            ),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
                         ),
                         const SizedBox(
                           height: 10,
@@ -129,19 +130,20 @@ class _CardScreenState extends State<CardScreen> {
                           },
                           decoration: InputDecoration(
                               labelText: 'Last name',
+                              hintText: 'Ex:- Afre',
                               labelStyle: const TextStyle(
-                                color: Colors.blue,
+                                color: Colors.grey,
                               ),
                               border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(4),
+                                borderRadius: BorderRadius.circular(10),
                               )),
                         ),
                         const SizedBox(
                           height: 10,
                         ),
                         TextFormField(
+                          maxLength: 10,
                           controller: txtPhone,
-                          obscureText: true,
                           keyboardType: TextInputType.number,
                           validator: (value) {
                             if (value!.isEmpty) {
@@ -150,11 +152,12 @@ class _CardScreenState extends State<CardScreen> {
                           },
                           decoration: InputDecoration(
                             labelText: 'Phone Number',
+                            hintText: 'Ex:- 9173074442',
                             labelStyle: const TextStyle(
-                              color: Colors.blue,
+                              color: Colors.grey,
                             ),
                             border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(4),
+                              borderRadius: BorderRadius.circular(10),
                             ),
                           ),
                         ),
@@ -224,24 +227,47 @@ class _CardScreenState extends State<CardScreen> {
                       ),
                     ],
                   ),
-
-                  Padding(
-                    padding: const EdgeInsets.all(10),
+                  const Padding(
+                    padding: EdgeInsets.all(10),
                     child: Row(
                       children: [
-                        Text('Hobby :',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),),
+                        Text(
+                          'Hobby :',
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w600),
+                        ),
                       ],
                     ),
                   ),
-
                   buildCheckboxListTile(index: 0),
                   buildCheckboxListTile(index: 1),
                   buildCheckboxListTile(index: 2),
                   buildCheckboxListTile(index: 3),
-
                 ],
               ),
             ],
+          ),
+        ),
+      ),
+      bottomNavigationBar: GestureDetector(
+        onTap: () {
+          firstName = txtName.toString();
+          lastName = txtSurname.toString();
+          phoneNumber = txtPhone.toString();
+          Navigator.of(context).pushNamed('/CardDetail');
+        },
+        child: const BottomAppBar(
+          height: 60,
+          elevation: 6,
+          shadowColor: Colors.black,
+          child: Center(
+            child: Text(
+              'Submit',
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 24,
+              ),
+            ),
           ),
         ),
       ),
@@ -249,10 +275,14 @@ class _CardScreenState extends State<CardScreen> {
   }
 
   CheckboxListTile buildCheckboxListTile({required int index}) {
-    return CheckboxListTile(value: hobby[index], onChanged: (value) {
-                  setState(() {
-                    hobby[index] = value!;
-                  });
-                },title: Text(hobbyname[index]),);
+    return CheckboxListTile(
+      value: hobby[index],
+      onChanged: (value) {
+        setState(() {
+          hobby[index] = value!;
+        });
+      },
+      title: Text(hobbyname[index]),
+    );
   }
 }
