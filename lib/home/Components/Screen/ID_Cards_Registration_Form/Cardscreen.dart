@@ -53,9 +53,9 @@ class _CardScreenState extends State<CardScreen> {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.blue,
+                    radius: 60,
                     backgroundImage:
                         (fileImage != null) ? FileImage(fileImage!) : null,
-                    radius: 60,
                   ),
                   const SizedBox(
                     height: 10,
@@ -65,11 +65,11 @@ class _CardScreenState extends State<CardScreen> {
                     children: [
                       IconButton(
                         onPressed: () async {
-                          XFile? xFile = await imagePicker.pickImage(
+                          XFile? xFileImage = await imagePicker.pickImage(
                               source: ImageSource.camera);
 
                           setState(() {
-                            fileImage = File(xFile!.path);
+                            fileImage = File(xFileImage!.path);
                           });
                         },
                         icon: const Icon(
@@ -79,11 +79,11 @@ class _CardScreenState extends State<CardScreen> {
                       ),
                       IconButton(
                         onPressed: () async {
-                          XFile? xfileImage = await imagePicker.pickImage(
+                          XFile? xFileImage = await imagePicker.pickImage(
                               source: ImageSource.gallery);
 
                           setState(() {
-                            fileImage = File(xfileImage!.path);
+                            fileImage = File(xFileImage!.path);
                           });
                         },
                         icon: const Icon(
@@ -108,7 +108,8 @@ class _CardScreenState extends State<CardScreen> {
                             }
                           },
                           decoration: InputDecoration(
-                              labelText: 'Name',
+                            hintText: '',
+                              labelText: 'First Name',
                               labelStyle: TextStyle(
                                 color: Colors.blue,
                               ),
@@ -127,7 +128,7 @@ class _CardScreenState extends State<CardScreen> {
                             }
                           },
                           decoration: InputDecoration(
-                              labelText: 'Surname',
+                              labelText: 'Last name',
                               labelStyle: const TextStyle(
                                 color: Colors.blue,
                               ),
@@ -148,7 +149,7 @@ class _CardScreenState extends State<CardScreen> {
                             }
                           },
                           decoration: InputDecoration(
-                            labelText: 'Phone',
+                            labelText: 'Phone Number',
                             labelStyle: const TextStyle(
                               color: Colors.blue,
                             ),
@@ -170,7 +171,7 @@ class _CardScreenState extends State<CardScreen> {
                         Text(
                           'Gender :',
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 20,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -222,7 +223,22 @@ class _CardScreenState extends State<CardScreen> {
                         style: TextStyle(fontSize: 16),
                       ),
                     ],
-                  )
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Row(
+                      children: [
+                        Text('Hobby :',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),),
+                      ],
+                    ),
+                  ),
+
+                  buildCheckboxListTile(index: 0),
+                  buildCheckboxListTile(index: 1),
+                  buildCheckboxListTile(index: 2),
+                  buildCheckboxListTile(index: 3),
+
                 ],
               ),
             ],
@@ -230,5 +246,13 @@ class _CardScreenState extends State<CardScreen> {
         ),
       ),
     );
+  }
+
+  CheckboxListTile buildCheckboxListTile({required int index}) {
+    return CheckboxListTile(value: hobby[index], onChanged: (value) {
+                  setState(() {
+                    hobby[index] = value!;
+                  });
+                },title: Text(hobbyname[index]),);
   }
 }

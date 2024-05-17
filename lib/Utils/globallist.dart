@@ -36,4 +36,9 @@ List<bool> hobby = [
   false,
   false,
   false,
+  false,
+];
+
+List hobbyname = [
+  'Cricket' , 'Chess' , 'Footboll' , 'Reading',
 ];
