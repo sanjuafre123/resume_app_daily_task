@@ -326,8 +326,9 @@ SystemChrome.setPreferredOrientations([
 <h1 align="center"></h1>
 <div align ="center">
 
-  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/7348899f-2a8b-41e2-9bc2-7f329d9c8719" height ="550">
-  
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/31002e23-7c86-4a94-b42b-9e24337f3fcb" height ="550">
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/40afb671-6b2d-4b3a-be69-8d6d86bc8591" height ="550">
+
 </div>
 
 <h3 align="center"> ✨ Generate Dynamic Text Field ✨ </h3>
