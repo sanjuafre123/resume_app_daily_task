@@ -327,8 +327,13 @@ SystemChrome.setPreferredOrientations([
 <div align ="center">
 
   <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/a55144f1-2615-42d7-9e5e-3641ee2c9cb9" height ="550"><br>
+  <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/5b76d117-f8bc-4ce7-b560-951fcb1f1ebb" type="video/mp4">
   <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/Generate_Dynamic_Text_Field/dynamic_text.dart">  Click here Link </a>
   
 </div>
+
+
+
+
 
 
