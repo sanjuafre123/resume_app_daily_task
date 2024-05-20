@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import '../home/Components/Screen/G-mail/G-mail.dart';
+import '../home/Components/Screen/Generate_Dynamic_Text_Field/dynamic_text.dart';
 import '../home/Components/Screen/Google_Login_Page_With_Validation/Emailscreen.dart';
 import '../home/Components/Screen/Google_Login_Page_With_Validation/LoginSuccessfuliy.dart';
 import '../home/Components/Screen/Google_Login_Page_With_Validation/PasswordScreen.dart';
@@ -25,9 +26,9 @@ class Approutes{
     // '/Succese' : (context) => const LoginSuccese(),
     // '/snaker' : (context) => const snakerpage(),
     // '/imgpicker' : (context) => const imgpicker(),
-    '/' : (context) => const CardScreen(),
-    '/CardDetail' : (context) => const CardDetailScreen(),
-
+    // '/' : (context) => const CardScreen(),
+    // '/CardDetail' : (context) => const CardDetailScreen(),
+    '/' : (context)  => const TextFieldScreen(),
 
 
 

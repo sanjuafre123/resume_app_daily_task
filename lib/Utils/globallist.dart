@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 List titlename = [
@@ -40,9 +41,20 @@ List<bool> hobby = [
 ];
 
 List hobbyname = [
-  'Cricket' , 'Chess' , 'Footboll' , 'Reading',
+  'Cricket',
+  'Chess',
+  'Footboll',
+  'Reading',
 ];
 
 String firstName = '';
 String lastName = '';
 String phoneNumber = '';
+String dub = '';
+List selectedindex = [];
+
+TextEditingController txtController = TextEditingController();
+
+List<TextEditingController> text = [
+  txtController,
+];

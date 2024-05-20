@@ -17,6 +17,7 @@ class _CardScreenState extends State<CardScreen> {
   Widget build(BuildContext context) {
     TextEditingController txtName = TextEditingController();
     TextEditingController txtSurname = TextEditingController();
+    TextEditingController txtdob = TextEditingController();
     TextEditingController txtPhone = TextEditingController();
     GlobalKey<FormState> formkey = GlobalKey();
 
@@ -52,10 +53,10 @@ class _CardScreenState extends State<CardScreen> {
               Column(
                 children: [
                   CircleAvatar(
-                    backgroundColor: Colors.blue,
-                    radius: 60,
+                    backgroundColor: Colors.grey,
+                    radius: 100,
                     backgroundImage:
-                        (fileImage != null) ? FileImage(fileImage!) : null,
+                    (fileImage != null) ? FileImage(fileImage!) : null,
                   ),
                   const SizedBox(
                     height: 10,
@@ -142,6 +143,29 @@ class _CardScreenState extends State<CardScreen> {
                           height: 10,
                         ),
                         TextFormField(
+                          controller: txtdob,
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return 'Value must be required';
+                            }
+                          },
+                          decoration: InputDecoration(
+                            labelText: 'D.O.B',
+                            hintText: 'Ex:- 08/12/2005',
+                            suffixIcon: Icon(Icons.date_range),
+                            labelStyle: const TextStyle(
+                              color: Colors.grey,
+                            ),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10),
+
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        TextFormField(
                           maxLength: 10,
                           controller: txtPhone,
                           keyboardType: TextInputType.number,
@@ -152,7 +176,7 @@ class _CardScreenState extends State<CardScreen> {
                           },
                           decoration: InputDecoration(
                             labelText: 'Phone Number',
-                            hintText: 'Ex:- 9173074442',
+                            hintText: '+91 9173074442',
                             labelStyle: const TextStyle(
                               color: Colors.grey,
                             ),
@@ -251,10 +275,24 @@ class _CardScreenState extends State<CardScreen> {
       ),
       bottomNavigationBar: GestureDetector(
         onTap: () {
-          firstName = txtName.toString();
-          lastName = txtSurname.toString();
-          phoneNumber = txtPhone.toString();
-          Navigator.of(context).pushNamed('/CardDetail');
+          bool response = formkey.currentState!.validate();
+          if (response) {
+            firstName = txtName.toString();
+            lastName = txtSurname.toString();
+            phoneNumber = txtPhone.toString();
+            dub = txtdob.toString();
+
+            for(int i=0; i<hobby.length; i++)
+              {
+                if(hobby[i])
+                  {
+                    hobby[i] = false;
+                    selectedindex.add(hobbyname[i]);
+                  }
+              }
+            formkey.currentState!.reset();
+            Navigator.of(context).pushNamed('/CardDetail');
+          }
         },
         child: const BottomAppBar(
           height: 60,
