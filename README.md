@@ -321,6 +321,15 @@ SystemChrome.setPreferredOrientations([
   
 </div>
 
+<h3 align="center"> ✨ ID Card's Registration Form ✨ </h3>
+
+<h1 align="center"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/7348899f-2a8b-41e2-9bc2-7f329d9c8719" height ="550">
+  
+</div>
+
 <h3 align="center"> ✨ Generate Dynamic Text Field ✨ </h3>
 
 <h1 align="center"></h1>
@@ -331,6 +340,8 @@ SystemChrome.setPreferredOrientations([
   <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/Generate_Dynamic_Text_Field/dynamic_text.dart">  Click here Link </a>
   
 </div>
+
+
 
 
 
