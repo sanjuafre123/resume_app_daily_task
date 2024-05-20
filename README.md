@@ -321,6 +321,14 @@ SystemChrome.setPreferredOrientations([
   
 </div>
 
+<h3 align="center"> ✨ Generate Dynamic Text Field ✨ </h3>
 
+<h1 align="center"></h1>
+<div align ="center">
+
+  <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/a55144f1-2615-42d7-9e5e-3641ee2c9cb9" height ="550"><br>
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/blob/master/lib/home/Components/Screen/Generate_Dynamic_Text_Field/dynamic_text.dart">  Click here Link </a>
+  
+</div>
 
 
