@@ -15,6 +15,7 @@ class CardScreen extends StatefulWidget {
 class _CardScreenState extends State<CardScreen> {
   @override
   Widget build(BuildContext context) {
+
     TextEditingController txtName = TextEditingController();
     TextEditingController txtSurname = TextEditingController();
     TextEditingController txtdob = TextEditingController();
@@ -22,7 +23,7 @@ class _CardScreenState extends State<CardScreen> {
     GlobalKey<FormState> formkey = GlobalKey();
 
     ImagePicker imagePicker = ImagePicker();
-    File? fileImage;
+    File? fileImg;
 
     return Scaffold(
       appBar: AppBar(
@@ -47,7 +48,7 @@ class _CardScreenState extends State<CardScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Column(
@@ -70,7 +71,7 @@ class _CardScreenState extends State<CardScreen> {
                               source: ImageSource.camera);
 
                           setState(() {
-                            fileImage = File(xFileImage!.path);
+                            fileImg = File(xFileImage!.path);
                           });
                         },
                         icon: const Icon(
@@ -84,7 +85,7 @@ class _CardScreenState extends State<CardScreen> {
                               source: ImageSource.gallery);
 
                           setState(() {
-                            fileImage = File(xFileImage!.path);
+                            fileImg = File(xFileImage!.path);
                           });
                         },
                         icon: const Icon(

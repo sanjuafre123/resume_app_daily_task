@@ -26,9 +26,9 @@ class Approutes{
     // '/Succese' : (context) => const LoginSuccese(),
     // '/snaker' : (context) => const snakerpage(),
     // '/imgpicker' : (context) => const imgpicker(),
-    // '/' : (context) => const CardScreen(),
-    // '/CardDetail' : (context) => const CardDetailScreen(),
-    '/' : (context)  => const TextFieldScreen(),
+    '/' : (context) => const CardScreen(),
+    '/CardDetail' : (context) => const CardDetailScreen(),
+    // '/' : (context)  => const TextFieldScreen(),
 
 
 

@@ -42,7 +42,7 @@ class _CardDetailScreenState extends State<CardDetailScreen> {
                   height: 160,
                   width: 160,
                   decoration: BoxDecoration(
-                    color: Color(0xff5AB2FF),
+                    color: const Color(0xff5AB2FF),
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 16),
                   ),
@@ -53,44 +53,44 @@ class _CardDetailScreenState extends State<CardDetailScreen> {
                         (fileImage != null) ? FileImage(fileImage!) : null,
                   ),
                 ),
-                SizedBox(
-                  height: 20,
+                const SizedBox(
+                  height: 10,
                 ),
               ],
             ),
           ),
           ListTile(
-            leading: Text(
+            leading: const Text(
               'Name : ',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),
             ),
             title: Text(
               '$firstName $lastName',
-              style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
             ),
           ),
-          ListTile(
-            leading: const Text(
-              'D.O.B : ',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-            ),
-            title: Text(
-              dub,
-              style: const TextStyle(
-                  fontSize: 25, fontWeight: FontWeight.bold),
-            ),
-          ),
-          ListTile(
-            leading: const Text(
-              'Contact : ',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-            ),
-            title: Text(
-              phoneNumber,
-              style: const TextStyle(
-                  fontSize: 25, fontWeight: FontWeight.bold),
-            ),
-          ),
+          // ListTile(
+          //   leading: const Text(
+          //     'D.O.B : ',
+          //     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+          //   ),
+          //   title: Text(
+          //     dub,
+          //     style: const TextStyle(
+          //         fontSize: 25, fontWeight: FontWeight.bold),
+          //   ),
+          // ),
+          // ListTile(
+          //   leading: const Text(
+          //     'Contact : ',
+          //     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+          //   ),
+          //   title: Text(
+          //     phoneNumber,
+          //     style: const TextStyle(
+          //         fontSize: 25, fontWeight: FontWeight.bold),
+          //   ),
+          // ),
         ],
       ),
     );
