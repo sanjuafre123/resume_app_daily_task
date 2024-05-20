@@ -61,36 +61,74 @@ class _CardDetailScreenState extends State<CardDetailScreen> {
           ),
           ListTile(
             leading: const Text(
-              'Name : ',
+              'Name      : ',
               style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),
             ),
             title: Text(
-              '$firstName $lastName',
+             '${firstName}',
               style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
             ),
           ),
-          // ListTile(
-          //   leading: const Text(
-          //     'D.O.B : ',
-          //     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-          //   ),
-          //   title: Text(
-          //     dub,
-          //     style: const TextStyle(
-          //         fontSize: 25, fontWeight: FontWeight.bold),
-          //   ),
-          // ),
-          // ListTile(
-          //   leading: const Text(
-          //     'Contact : ',
-          //     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-          //   ),
-          //   title: Text(
-          //     phoneNumber,
-          //     style: const TextStyle(
-          //         fontSize: 25, fontWeight: FontWeight.bold),
-          //   ),
-          // ),
+          ListTile(
+            leading: const Text(
+              'D.O.B       : ',
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+            title: Text(
+              dub,
+              style: const TextStyle(
+                  fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+          ),
+          ListTile(
+            leading: const Text(
+              'Contact   : ',
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+            title: Text(
+              phoneNumber,
+              style: const TextStyle(
+                  fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+          ),
+          ListTile(
+            leading: const Text(
+              'Gender     : ',
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+            title: Text(
+              gender,
+              style: const TextStyle(
+                  fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+          ),
+          ListTile(
+            leading: const Text(
+              'Hobbies   : ',
+              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            ),
+            title: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Wrap(
+                children: [
+                 Row(
+                  children: [
+                    ...List.generate(selectedindex.length, (index) => Row(
+                      children: [
+                        Text(
+                          '${selectedindex[index]} , ',
+                          style: const TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),),
+                  ],
+
+                ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );

@@ -17,6 +17,7 @@ import '../home/Components/Screen/image_picker/img_picker.dart';
 
 class Approutes{
   static Map<String, Widget Function(BuildContext)> routes = {
+
     // '/homes' : (context) => const Homescreen(),
     // '/Gmail' : (context) => const Gmailscreen(),
     //  '/Enterlogin' : (context) => const EnterLoginScreen(),
@@ -29,8 +30,6 @@ class Approutes{
     '/' : (context) => const CardScreen(),
     '/CardDetail' : (context) => const CardDetailScreen(),
     // '/' : (context)  => const TextFieldScreen(),
-
-
 
   };
 }
