@@ -58,3 +58,18 @@ TextEditingController txtController = TextEditingController();
 List<TextEditingController> text = [
   txtController,
 ];
+
+List<InvoiceModel> invoiceList = [
+  InvoiceModel(name: 'ASUS',price: '49,999/-',category: 'Laptop'),
+  InvoiceModel(name: 'HP',price: '39,999/-',category: 'Laptop'),
+  InvoiceModel(name: 'Lenovo',price: '50,999/-',category: 'Laptop'),
+];
+
+class InvoiceModel
+{
+  String? name;
+  String? price;
+  String? category;
+
+  InvoiceModel({this.name, this.price,this.category});
+}
