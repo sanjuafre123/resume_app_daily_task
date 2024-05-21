@@ -328,6 +328,8 @@ SystemChrome.setPreferredOrientations([
 
   <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/31002e23-7c86-4a94-b42b-9e24337f3fcb" height ="550">
   <img src = "https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/40afb671-6b2d-4b3a-be69-8d6d86bc8591" height ="550">
+  <video src="https://github.com/sanjuafre123/resume_app_daily_task/assets/148860124/d80af4d8-564f-496a-b4a0-3831e015e439" type="video/mp4">
+  <a href ="https://github.com/sanjuafre123/resume_app_daily_task/tree/master/lib/home/Components/Screen/ID_Cards_Registration_Form">  Click here Link </a>
 
 </div>
 
